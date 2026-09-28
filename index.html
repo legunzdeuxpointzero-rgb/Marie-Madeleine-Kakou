@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kakou Marie Madeleine | Assistante de direction à Abidjan</title>
+<meta name="description" content="Marie Madeleine Kakou, assistante de direction à Abidjan : agenda, accueil, facturation, caisse, rapprochements bancaires et archivage.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a2826;--bg2:#103836;--ink:#eaf6f3;--mute:#a9c7c2;--acc:#4fd1c0;--warm:#f2c879;--line:rgba(255,255,255,.14);--card:rgba(255,255,255,.06);--on:#04211f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#eef7f5;--bg2:#dcefeb;--ink:#0e2f2c;--mute:#3f6661;--acc:#0b7d71;--warm:#9a6a10;--line:rgba(14,47,44,.18);--card:rgba(255,255,255,.75);--on:#fff}}
+:root[data-theme="light"]{--bg:#eef7f5;--bg2:#dcefeb;--ink:#0e2f2c;--mute:#3f6661;--acc:#0b7d71;--warm:#9a6a10;--line:rgba(14,47,44,.18);--card:rgba(255,255,255,.75);--on:#fff}
+:root[data-theme="dark"]{--bg:#0a2826;--bg2:#103836;--ink:#eaf6f3;--mute:#a9c7c2;--acc:#4fd1c0;--warm:#f2c879;--line:rgba(255,255,255,.14);--card:rgba(255,255,255,.06);--on:#04211f}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.65 "DM Sans",system-ui,sans-serif;overflow-x:hidden;transition:background .4s,color .4s}
+h1,h2,h3{font-family:"Bricolage Grotesque",Georgia,sans-serif;line-height:1.05;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--warm);outline-offset:3px}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--acc),var(--warm));z-index:60}
+#glow{position:fixed;width:520px;height:520px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,color-mix(in srgb,var(--acc) 18%,transparent),transparent 65%);transform:translate(-50%,-50%);left:50%;top:30%;z-index:0}
+.aurora{position:absolute;inset:0;overflow:hidden;z-index:0}
+.aurora i{position:absolute;border-radius:50%;filter:blur(90px);opacity:.45;animation:drift 18s ease-in-out infinite alternate}
+.aurora i:nth-child(1){width:46vw;height:46vw;background:#14867b;left:-10vw;top:-12vw}
+.aurora i:nth-child(2){width:34vw;height:34vw;background:#f2c879;opacity:.15;right:-6vw;top:20vh;animation-delay:-6s}
+.aurora i:nth-child(3){width:40vw;height:40vw;background:#1e5c8a;opacity:.28;left:30vw;bottom:-18vw;animation-delay:-11s}
+@keyframes drift{to{transform:translate(6vw,5vh) scale(1.15)}}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:calc(12px + env(safe-area-inset-top,0px)) clamp(18px,5vw,56px) 12px;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 75%,transparent);border-bottom:1px solid var(--line)}
+nav b{font:800 20px "Bricolage Grotesque"}
+.links{display:flex;gap:clamp(14px,2.6vw,28px);font-size:15px;align-items:center}
+.links a{text-decoration:none;color:var(--mute);transition:color .2s;position:relative}
+.links a.on,.links a:hover{color:var(--ink)}
+.links a.on::after{content:"";position:absolute;left:0;right:0;bottom:-5px;height:2px;background:var(--acc);border-radius:2px}
+.nr{display:flex;gap:10px;z-index:70}
+.ic{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;display:grid;place-items:center;font-size:17px;transition:border-color .2s}
+.ic:hover{border-color:var(--acc)}
+.burger{display:none}
+section{position:relative;z-index:1;padding:clamp(70px,10vw,130px) clamp(18px,6vw,80px);max-width:1200px;margin:auto}
+#hero{min-height:100vh;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-top:120px;max-width:1300px}
+#hw{position:relative;overflow:hidden}
+h1{font-size:clamp(46px,8.4vw,116px);font-weight:800}
+h1 span{display:block;background:linear-gradient(100deg,var(--acc),var(--warm) 60%,var(--acc));background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 6s linear infinite}
+@keyframes sheen{to{background-position:200% center}}
+.role{margin-top:22px;font-size:clamp(19px,2.3vw,27px);color:var(--mute);min-height:1.6em}
+.role b{color:var(--ink);font-weight:500}
+.caret{display:inline-block;width:2px;height:1em;background:var(--warm);margin-left:3px;vertical-align:-2px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.btn{padding:14px 26px;border-radius:99px;text-decoration:none;font:700 16px "DM Sans";border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;transition:transform .25s,box-shadow .25s}
+.btn.p{background:var(--acc);color:var(--on);border-color:transparent}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px -12px var(--acc)}
+.stage{position:relative;display:grid;place-items:center;perspective:900px}
+.ph{position:relative;width:min(70%,320px);aspect-ratio:1;transition:transform .15s;transform-style:preserve-3d}
+.ph img{width:100%;height:100%;border-radius:50%;object-fit:cover;border:6px solid var(--bg2);position:relative;z-index:2;background:var(--bg2)}
+.ph::before{content:"";position:absolute;inset:-14px;border-radius:50%;background:conic-gradient(from 0deg,var(--acc),transparent 35%,var(--warm),transparent 70%,var(--acc));animation:spin 8s linear infinite}
+.ph::after{content:"";position:absolute;inset:-14px;border-radius:50%;box-shadow:inset 0 0 0 10px var(--bg);z-index:1}
+@keyframes spin{to{transform:rotate(360deg)}}
+.agenda{position:absolute;right:-2%;bottom:-14%;width:min(78%,290px);z-index:3;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px;backdrop-filter:blur(16px);box-shadow:0 30px 60px -28px #000;font-size:14px;transform:translateZ(60px)}
+.agenda h3{font-size:15px;margin-bottom:8px;color:var(--warm)}
+.agenda li{list-style:none;display:flex;gap:10px;align-items:center;padding:5px 0;color:var(--mute);transition:color .4s}
+.agenda li::before{content:"";flex:none;width:17px;height:17px;border-radius:5px;border:1.5px solid var(--mute);transition:.4s}
+.agenda li.on{color:var(--ink)}
+.agenda li.on::before{background:var(--acc) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.500 8.500l3 3 6-7' fill='none' stroke='%2304211f' stroke-width='2.400'/%3E%3C/svg%3E") center/cover;border-color:var(--acc)}
+h2{font-size:clamp(32px,5vw,62px);margin-bottom:18px;font-weight:700}
+.lead{font-size:clamp(18px,2vw,23px);max-width:38em}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+.stats{display:flex;flex-wrap:wrap;gap:16px;margin-top:40px}
+.stat{flex:1 1 180px;padding:22px;border:1px solid var(--line);border-radius:20px;background:var(--card)}
+.stat strong{display:block;font:800 clamp(38px,5vw,60px)/1 "Bricolage Grotesque";color:var(--acc)}
+.stat small{color:var(--mute);font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.chips span,.sk span{padding:6px 14px;border-radius:99px;background:color-mix(in srgb,var(--acc) 14%,transparent);font-size:14.5px}
+.chips em{font-style:normal;color:var(--mute);align-self:center;margin-right:4px;font-size:14px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:34px}
+.sk{padding:26px;border:1px solid var(--line);border-radius:22px;background:var(--card);transition:transform .3s,border-color .3s}
+.sk:hover{transform:translateY(-6px) rotate(-.6deg);border-color:var(--acc)}
+.sk h3{font-size:24px;margin-bottom:14px}
+.sk span{display:inline-block;margin:0 6px 8px 0}
+.tl{position:relative;margin-top:40px;padding-left:34px}
+.tl::before,.tl::after{content:"";position:absolute;left:8px;top:6px;width:2px}
+.tl::before{bottom:0;background:var(--line)}
+.tl::after{height:var(--h,0%);background:linear-gradient(var(--acc),var(--warm));transition:height .2s}
+.job{position:relative;padding-bottom:36px}
+.job::before{content:"";position:absolute;left:-33px;top:9px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--acc)}
+.job.now::before{background:var(--warm);border-color:var(--warm);animation:ping 2s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 var(--warm)}70%{box-shadow:0 0 0 14px transparent}}
+.job time{font-size:14px;color:var(--warm);font-weight:500}
+.job h3{font-size:clamp(22px,2.6vw,30px);margin:2px 0 6px}
+.job h3 em{font-style:normal;color:var(--acc)}
+.job ul{color:var(--mute);padding-left:18px;font-size:16px;max-width:46em}
+.more{display:none}.tl.all .more{display:block}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:30px}
+.edu div{padding:24px;border-left:3px solid var(--acc);background:var(--card);border-radius:0 18px 18px 0;color:var(--mute);font-size:15.5px}
+.edu b{font:700 21px "Bricolage Grotesque";display:block;color:var(--ink);line-height:1.15;margin:2px 0 6px}
+.edu small{color:var(--warm);font-size:15px}
+.ct{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;margin-top:20px}
+.mail{display:inline-block;margin:6px 0 14px;font:700 clamp(20px,3.2vw,34px) "Bricolage Grotesque";text-decoration:none;border-bottom:3px solid var(--acc);overflow-wrap:anywhere;transition:color .2s}
+.mail:hover{color:var(--acc)}
+form{display:grid;gap:16px}
+label{display:grid;gap:6px;font-size:14px;font-weight:500}
+input,textarea{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 14px;transition:border-color .2s}
+input:focus,textarea:focus{outline:none;border-color:var(--acc)}
+textarea{min-height:130px;resize:vertical}
+.hp{position:absolute;left:-9999px}
+#ok{display:none;border:1px solid var(--acc);border-radius:12px;padding:14px}
+footer{position:relative;z-index:1;text-align:center;padding:30px 20px 50px;color:var(--mute);font-size:14px}
+#top{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40;opacity:0;pointer-events:none;transition:opacity .3s}
+#top.show{opacity:1;pointer-events:auto}
+@media(max-width:860px){
+#hero{grid-template-columns:1fr}.stage{margin-top:30px;padding-bottom:60px}.ct{grid-template-columns:1fr;gap:36px}
+.burger{display:grid}
+.links{position:fixed;top:0;right:0;height:100%;width:min(300px,82%);background:var(--bg);flex-direction:column;align-items:flex-start;justify-content:center;gap:24px;padding:40px;border-left:1px solid var(--line);transform:translateX(100%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.links.open{transform:none}
+.links a{font:700 24px "Bricolage Grotesque";color:var(--ink)}}
+@media (max-width:1080px){
+	#hero{grid-template-columns:1fr;gap:26px;text-align:center;padding-top:110px}
+	#hero>div:first-child{max-width:700px;margin:0 auto}
+	.cta{justify-content:center}
+	.stage{margin-top:8px;padding-bottom:24px}
+	.ph{width:min(48vw,300px)}
+	.ct{grid-template-columns:1fr;gap:36px}
+}
+@media (max-width:640px){
+	nav{padding-left:14px;padding-right:14px}
+	nav b{font-size:18px}
+	section{padding:64px 16px}
+	#hero{padding-top:100px;min-height:auto}
+	h1{font-size:clamp(38px,13vw,62px)}
+	.role{font-size:clamp(17px,5.5vw,24px);margin-top:16px}
+	.cta{display:grid;grid-template-columns:1fr;gap:10px;margin-top:26px}
+	.btn{width:100%;text-align:center;padding:14px 18px}
+	.stats{display:grid;grid-template-columns:1fr;gap:12px}
+	.stat{padding:18px}
+	.stat strong{font-size:clamp(30px,11vw,46px)}
+	.skills{grid-template-columns:1fr}
+	.job h3{font-size:clamp(20px,6vw,28px)}
+	.job ul{font-size:15px}
+	.edu{grid-template-columns:1fr}
+	.mail{font-size:clamp(20px,7vw,30px)}
+	.ct p, .ct a{overflow-wrap:anywhere}
+}
+@media (max-width:420px){
+	.nr{gap:8px}
+	.ic{width:36px;height:36px;font-size:15px}
+	.ph{width:min(72vw,240px)}
+	.cta{grid-template-columns:1fr}
+	.lead{font-size:17px}
+	.links{width:100%}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="bar"></div><div id="glow"></div>
+<nav><b>M. Kakou</b>
+<div class="links" id="menu"><a href="#apropos">Profil</a><a href="#competences">Compétences</a><a href="#parcours">Parcours</a><a href="#formation">Formation</a><a href="#contact">Contact</a></div>
+<div class="nr"><button class="ic" id="theme" aria-label="Changer de thème">◐</button><button class="ic burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button></div></nav>
+
+<div id="hw"><div class="aurora"><i></i><i></i><i></i></div>
+<section id="hero">
+<div>
+<h1 aria-label="Marie Madeleine Kakou">Marie Madeleine <span>Kakou</span></h1>
+<p class="role">Assistante de direction, <b id="typed"></b><i class="caret"></i></p>
+<div class="cta"><a class="btn p" href="#parcours">Découvrir mon parcours</a><a class="btn" href="Vert%20et%20Blanc%20Minimaliste%20rond%20avec%20photo%20CV.pdf" download>Télécharger mon CV</a><a class="btn" href="#contact">Me contacter</a></div>
+</div>
+<div class="stage">
+<div class="ph" id="ph"><img alt="Portrait de Marie Madeleine Kakou" src="WhatsApp%20Image%202026-09-28%20at%2017.51.48.jpeg"></div>
+</div>
+</section></div>
+
+<section id="apropos">
+<h2 class="rv">Une direction sereine commence par une assistante fiable.</h2>
+<p class="lead rv">Plus de 7 ans d'expérience en assistanat, secrétariat et comptabilité courante : agenda, accueil, facturation, caisse et rapprochements bancaires. Organisée, rigoureuse et discrète, je veux mettre mes compétences au service d'une entreprise ambitieuse et y devenir une référence.</p>
+<div class="stats rv">
+<div class="stat"><strong data-n="7" data-s="+">0</strong><small>années d'expérience</small></div>
+<div class="stat"><strong data-n="11">0</strong><small>postes et stages occupés</small></div>
+<div class="stat"><strong data-n="3">0</strong><small>métiers réunis : assistanat, comptabilité, vente</small></div>
+</div>
+<div class="chips rv"><em>Centres d'intérêt</em><span>Lecture</span><span>Voyage</span><span>Sport</span><span>Commerce</span></div>
+</section>
+
+<section id="competences">
+<h2 class="rv">Ce que je maîtrise</h2>
+<div class="skills">
+<div class="sk rv"><h3>Assistanat</h3><span>Gestion d'agenda</span><span>Accueil</span><span>Standard téléphonique</span><span>Courriers</span><span>Déplacements</span><span>Réunions</span><span>Classement et archivage</span></div>
+<div class="sk rv"><h3>Comptabilité</h3><span>Facturation</span><span>Devis et reçus</span><span>Caisse</span><span>Rapprochements bancaires</span><span>Saisie et lettrage</span><span>Comptes de résultat</span></div>
+<div class="sk rv"><h3>Outils et langues</h3><span>Word</span><span>Excel (niveau excellent)</span><span>Internet</span><span>Français</span><span>Anglais (intermédiaire)</span><span>Permis B</span></div>
+<div class="sk rv"><h3>Qualités</h3><span>Dynamique</span><span>Rigoureuse</span><span>Responsable</span><span>À l'aise sous pression</span><span>Autonome ou en équipe</span></div>
+</div></section>
+
+<section id="parcours">
+<h2 class="rv">Mon parcours</h2>
+<div class="tl" id="tl">
+<article class="job now rv"><time>Août 2024 – aujourd'hui</time><h3>Assistante de direction <em>· SEAWELD CI</em></h3><ul><li>Accueil, réception et orientation des visiteurs, des messages et des appels</li><li>Gestion de l'agenda du directeur</li><li>Traitement, classement et archivage des dossiers</li><li>Traitement des factures et des reçus comptables</li></ul></article>
+<article class="job rv"><time>Sept. 2023 – Juil. 2024</time><h3>Caissière <em>· FIESTA</em></h3><ul><li>Gestion administrative des clients et facturation</li><li>Contrôle de la caisse et transmission à la comptabilité générale</li></ul></article>
+<article class="job rv"><time>Mai 2023 – Août 2023</time><h3>Responsable de boutique <em>· Kymas Librairie</em></h3><ul><li>Gestion de la clientèle et développement de l'activité commerciale</li><li>Rapprochements et versements bancaires, facturation client</li></ul></article>
+<article class="job rv"><time>Oct. 2020 – Fév. 2023</time><h3>Caissière <em>· L'Œnophile</em></h3><ul><li>Enregistrement des comptes, archivage des dossiers</li><li>Rapprochements bancaires, validation des chèques, secrétariat et clientèle</li></ul></article>
+<article class="job more rv"><time>Oct. 2019 – Janv. 2020</time><h3>Secrétaire intérimaire <em>· Inter'Net</em></h3><ul><li>Accueil, facturation client, inventaire</li><li>Contrôle et clôture de la caisse</li></ul></article>
+<article class="job more rv"><time>Mai 2019 – Sept. 2019</time><h3>Assistante administrative (intérim) <em>· Draft Architects</em></h3><ul><li>Accueil des visiteurs, clients et fournisseurs ; réception du courrier</li><li>Classement, archivage, organisation de réunions, devis et factures</li></ul></article>
+<article class="job more rv"><time>Oct. 2017 – Mars 2019</time><h3>Agent d'accueil <em>· Majestic One</em></h3><ul><li>Agenda du Directeur Général et accueil des fournisseurs</li><li>Organisation des déplacements de l'équipe et du responsable</li></ul></article>
+<article class="job more rv"><time>Oct. 2016 – Juil. 2017</time><h3>Stagiaire comptable <em>· SGS Côte d'Ivoire</em></h3><ul><li>Imputation et saisie des pièces, analyse et lettrage des comptes du bilan</li><li>Régularisation des comptes et établissement des P&amp;L</li></ul></article>
+<article class="job more rv"><time>Juil. 2015 – Juil. 2016</time><h3>Assistante de direction <em>· ETS KAM</em></h3><ul><li>Classement et archivage des dossiers</li><li>Suivi du personnel et des opérations salariales</li></ul></article>
+<article class="job more rv"><time>Mai 2014 – Juil. 2014</time><h3>Assistante des opérations <em>· Added Value</em></h3><ul><li>Enregistrement des ventes et gestion du stock</li><li>Coordination des points de vente (Côte d'Ivoire, Pointe-Noire, Dakar)</li></ul></article>
+<article class="job more rv"><time>Oct. 2013 – Déc. 2013</time><h3>Stagiaire comptable <em>· Fadco Company</em></h3><ul><li>Suivi administratif et commercial des opérations</li><li>Gestion et recrutement des ressources temporaires</li></ul></article>
+</div>
+<button class="btn" id="more">Voir toutes mes expériences</button>
+</section>
+
+<section id="formation">
+<h2 class="rv">Formation</h2>
+<div class="edu">
+<div class="rv"><small>2019</small><b>Baccalauréat série A1</b></div>
+<div class="rv"><small>Avril 2019</small><b>Formation SAARI</b></div>
+<div class="rv"><small>2019</small><b>Séminaire</b>La connaissance du monde professionnel</div>
+<div class="rv"><small>2016</small><b>Licence professionnelle</b>EDHEC, École des Hautes Études Commerciales, Abidjan</div>
+<div class="rv"><small>2012 – 2013</small><b>BTS Finances, Comptabilité et Gestion des Entreprises</b>2IAE, Abidjan</div>
+</div></section>
+
+<section id="contact">
+<h2 class="rv">Travaillons ensemble.</h2>
+<div class="ct">
+<div class="rv"><p class="lead">Une opportunité professionnelle ou une demande d'information ? Écrivez-moi.</p>
+<a class="mail" href="mailto:kakou_mad@yahoo.fr">kakou_mad@yahoo.fr</a>
+<p><a href="tel:+2250709229121">07 09 22 91 21</a> &nbsp;•&nbsp; <a href="tel:+2250747118400">07 47 11 84 00</a></p>
+<p style="color:var(--mute)">Abidjan, Côte d'Ivoire</p></div>
+<form id="f" class="rv" action="https://formspree.io/f/VOTRE_ID" method="POST">
+<label>Nom et prénom<input name="name" required autocomplete="name"></label>
+<label>Adresse e-mail<input type="email" name="email" required autocomplete="email"></label>
+<label>Objet<input name="subject" required></label>
+<label>Message<textarea name="message" required></textarea></label>
+<input class="hp" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button class="btn p" type="submit">Envoyer</button>
+<div id="ok" role="status">Message envoyé. Merci, je vous réponds rapidement.</div>
+</form></div></section>
+<footer>© <span id="y"></span> Marie Madeleine Kakou · Assistante de direction</footer>
+<button class="ic" id="top" aria-label="Retour en haut">↑</button>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],rm=matchMedia('(prefers-reduced-motion:reduce)').matches,root=document.documentElement;
+$('#y').textContent=new Date().getFullYear();
+try{const t=localStorage.getItem('theme');if(t)root.dataset.theme=t}catch(e){}
+$('#theme').onclick=()=>{const d=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;root.dataset.theme=d?'light':'dark';try{localStorage.setItem('theme',root.dataset.theme)}catch(e){}};
+const menu=$('#menu'),bg=$('#burger'),tg=o=>{menu.classList.toggle('open',o);bg.setAttribute('aria-expanded',o);bg.textContent=o?'✕':'☰'};
+bg.onclick=()=>tg(!menu.classList.contains('open'));$$('#menu a').forEach(a=>a.onclick=()=>tg(false));
+addEventListener('scroll',()=>{const d=root,tl=$('#tl'),r=tl.getBoundingClientRect();$('#bar').style.width=(scrollY/(d.scrollHeight-innerHeight)*100)+'%';
+tl.style.setProperty('--h',Math.max(0,Math.min(100,(innerHeight*.6-r.top)/r.height*100))+'%');$('#top').classList.toggle('show',scrollY>600)},{passive:true});
+$('#top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+addEventListener('pointermove',e=>{const g=$('#glow');g.style.left=e.clientX+'px';g.style.top=e.clientY+'px'});
+const ph=$('#ph'),st=$('.stage');st.addEventListener('pointermove',e=>{if(rm)return;const b=st.getBoundingClientRect(),x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;ph.style.transform=`rotateY(${x*18}deg) rotateX(${-y*18}deg)`});
+st.addEventListener('pointerleave',()=>ph.style.transform='');
+const roles=['accueil et standard.','agenda et déplacements.','facturation et caisse.','dossiers toujours à jour.'];let ri=0,ci=0,del=false;const ty=$('#typed');
+(function tick(){if(rm){ty.textContent=roles[0];return}const w=roles[ri];ci+=del?-1:1;ty.textContent=w.slice(0,ci);let t=del?28:65;
+if(!del&&ci===w.length){del=true;t=1600}else if(del&&ci===0){del=false;ri=(ri+1)%roles.length;t=350}setTimeout(tick,t)})();
+const li=$$('#ag li');let k=0;
+function ag(){if(k<li.length){li[k++].classList.add('on');setTimeout(ag,rm?0:900)}else{setTimeout(()=>{li.forEach(l=>l.classList.remove('on'));k=0;ag()},3200)}}
+setTimeout(ag,rm?0:1200);
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+$$('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%3)*80+'ms';io.observe(el)});
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)$$('#menu a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+$$('section').forEach(s=>so.observe(s));
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,n=+el.dataset.n,s=el.dataset.s||'';let v=0;co.unobserve(el);
+const f=()=>{v+=rm?n:Math.max(.15,n/40);if(v>=n){el.textContent=n+s}else{el.textContent=Math.floor(v)+s;requestAnimationFrame(f)}};f()}),{threshold:.6});
+$$('[data-n]').forEach(c=>co.observe(c));
+$('#more').onclick=e=>{const o=$('#tl').classList.toggle('all');e.target.textContent=o?'Réduire':'Voir toutes mes expériences';$$('.more').forEach(x=>x.classList.add('in'))};
+$('#f').addEventListener('submit',async e=>{e.preventDefault();const f=e.target,b=f.querySelector('button'),d=new FormData(f);b.disabled=true;
+const ok=()=>{$('#ok').style.display='block';f.reset();b.disabled=false};
+if(f.action.includes('VOTRE_ID')){location.href='mailto:kakou_mad@yahoo.fr?subject='+encodeURIComponent(d.get('subject'))+'&body='+encodeURIComponent(d.get('message')+'\n\n'+d.get('name')+' — '+d.get('email'));return ok()}
+try{const r=await fetch(f.action,{method:'POST',body:d,headers:{Accept:'application/json'}});r.ok?ok():b.disabled=false}catch(_){b.disabled=false}});
+</script>
+</body>
+</html>
